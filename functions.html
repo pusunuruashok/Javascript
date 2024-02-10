@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function f1(num1,num2){
+        var result=num1+num2;
+        return result;
+    }
+  document.write(f1(10,20))
+
+  var m1=  function(num1,num2){
+        var result=num1+num2;
+        return result;
+    }
+  document.write(m1(10,20))
+
+  var m2= (function(num1,num2){
+        var result=num1+num2;
+        return result;
+    })(33,44)
+  document.write(m2)
+
+  var m5=  (num1,num2)=>{
+        var result=num1+num2;
+        return result;
+    }
+  document.write(m5(10,54))
+</script>
+</body>
+</html>
