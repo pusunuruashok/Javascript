@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    // default parameters
+         function test(num1=10,num2=30){
+            var result=num1+num2;
+            return result;
+         }
+         console.log(test(100,300));
+
+// rest parameters
+         function test(num1=10,num2=30,...arr){
+            var result=num1+num2;
+            for(x of arr){
+
+                result=result + x;
+
+            }
+            return result;
+
+         }
+         console.log(test(100,300,10,20,30));
+
+
+
+    </script>
+</body>
+</html>
