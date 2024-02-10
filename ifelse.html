@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        //if else 
+      
+      var balence=10000;
+      var pros=prompt("Enter the number")
+      if(pros>balence){
+
+        alert(`the balence before is ${pros}`)
+      }
+      else{
+        balence=balence-pros
+        alert(`the balence before is ${balence} `)
+
+      }
+
+      // if else if 
+
+      var grade;
+      var score=prompt("enter the number");
+      if(score > 90){
+        grade="A"
+      } 
+      else if(score > 80){
+        grade="B"
+      }
+      else if(score > 70){
+        grade ="C"
+      }
+      else if(score > 60){
+        grade ="D"
+      }
+      else if (score > 50){
+        grade ="E"
+      }
+      else{
+        grade="Fail"
+      }
+   
+      document.write(`the grade of the score is writen as ${grade}`)
+
+   //  switch 
+
+   var num1=+prompt("Enter a number")
+   var num2=+prompt("Enter a number") 
+   var operation=prompt("enter the operation +/-/*/%")
+    switch(operation){
+        case '+': 
+        alert(`the sum of 2 numbers ${num1+num2}`)
+        break
+        case '-': 
+        alert(`the sum of 2 numbers ${num1-num2}`)
+        break
+        case '*': 
+        alert(`the sum of 2 numbers ${num1*num2}`)
+        break
+        case '/': 
+        alert(`the sum of 2 numbers ${num1/num2}`)
+        break
+    }
+
+    </script>
+</body>
+</html>
