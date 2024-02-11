@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="first">
+     
+         <p>This is first paragraph in division 1</p>
+         <p>This is second paragraph in division 1</p>
+
+    </div>
+    <div id="seond">
+
+        
+        <p>This is first paragraph in division 2</p>
+        <p id="sybseond">This is second paragraph in division 2</p>
+
+    </div>
+    <script>
+        var n=document.createElement('p')
+        console.log(n);
+        n.innerText="This is third paragraph in divison 2";
+        console.log(n); 
+        var parent=document.getElementById("seond");
+        console.log(parent); 
+        parent.appendChild(n);
+        var subchild=document.getElementById("sybseond");
+        parent.insertBefore(n,subchild);
+        console.log(parent);
+        // subchild.remove();
+        // console.log(subchild);
+    //  parent.removeChild(subchild);
+    //  console.log(parent);
+     subchild.replaceChildren(n);
+    </script>
+</body>
+</html>
