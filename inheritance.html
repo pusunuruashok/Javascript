@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+     
+     class person{
+
+        constructor(name,phone){
+            this.name=name;
+            this.phone=phone; 
+
+     }
+     getDetails(){
+
+       console.log("this name is"+this.name +"\n  phoneno:" +this.phone);
+     }  
+      }
+      class employee extends person{
+
+        constructor(pname,mphone,salary,company){
+           super(pname,mphone);
+            this.salary=salary;
+            this.company=company;
+        }
+      
+        getofcDetails(){
+
+console.log("this salary is"+this.salary +"\n  company:" +this.company);
+}  
+        
+        
+
+      }
+      let s1=new person("xyz",9381283812); 
+      let s2=new employee("xyz",9989971299,19999,"HCL")
+      s1.getDetails();
+      console.log(s1); 
+      s2.getofcDetails();
+      console.log(s2);
+
+    </script>
+</body>
+</html>
