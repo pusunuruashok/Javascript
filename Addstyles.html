@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #special{
+        color: blue; 
+    }
+    .one{
+        background-color: pink;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="special">
+        This is the div1
+    </div>
+    <script>
+     var x=document.getElementById("special");
+      x.getAttribute("id");
+      x.setAttribute('class','one')
+      console.log(x.getAttribute('class'));
+    //  x.style.color="green";
+    //  x.style.backgroundColor="pink" 
+
+    </script>
+</body>
+</html>
