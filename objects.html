@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+     
+     // creation of object using literals 
+
+     var obj={
+        "movie":"RRR", 
+        "actor":"NTR",
+        "director":"Rajamouli"
+     }
+
+     obj["vilin"]="ajaydevgan"
+     obj.heroine="shreya patal"
+     console.log(obj.heroine);
+     console.log(obj["vilin"]); 
+
+     // objrct creatio using new Object 
+
+     var obj1=new Object();
+     console.log(obj1);
+     obj1.name="Ashok"
+     obj1['age']=29;
+     obj1['gender']='male';
+
+     console.log(obj1);
+
+     // object creation using consturcotr function 
+
+     function user(name,age,gender){
+         
+        this.name=name;
+        this.age=age;
+        this.gender=gender;
+
+     }
+     let s8=new user("Kalyan",25,"Male");
+     console.log(s8);
+
+    // object creation using object way 
+
+    // let movie2=Object.create(obj,{
+    //      "movie":{
+    //         value:"NTR"
+    //      }, 
+    //      "actor":{
+    //         value:"Rc"
+    //      }});
+    // console.log(movie2); 
+
+    let movie3=Object.create(obj,{
+        "movie":{
+            value:"Mad"
+        },
+        "actor":{
+            value:"soban"
+        },
+        "director":{
+            value:"ANudeep"
+        }
+    })
+    console.log(movie3); 
+
+
+    // object creation using the classess 
+
+    class mobiles{
+      
+        constructor(name,ram){
+            this.name=name;
+            // this.price=price;
+            this.ram=ram;
+        }
+        // updateram(uram){
+        //     this.ram=uram;
+        // }
+        
+        set priceset(price){
+            if(price <=0) {
+
+                alert("the price can not be less than zero");
+            }
+            else{
+             this.price=price;
+
+            }
+        }
+        get getName(){
+            return "THe name is :"+this.name;
+        }
+
+    }
+    let mob=new mobiles("realme","8gb") 
+    // mob.updateram("19gb")
+    let mob1=new mobiles("redme","19gb") 
+    console.log(mob);
+    console.log(mob1);
+
+    
+
+    </script>
+</body>
+</html>
