@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="button" onclick="updatecount()" value="clickme">
+    <p id="count"> clicked:0</p>
+    <script>
+
+        // function outer(num1){
+        //     var x=10;
+        //     function inner(num2){
+               
+                
+        //         console.log(num1+num2+x);
+
+        //     }
+        //     // inner()
+        //     return inner;
+        // }
+        // var x= outer(6)
+        //   x(5)
+     let count=0
+        function updatecount(){
+        count=count+1;
+        let p1=document.getElementById("count"); 
+         p1.innerText=`the  count is :${count}`
+        }
+    </script>
+</body>
+</html>
