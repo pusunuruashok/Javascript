@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .button{
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-    
+     <input type="submit" value="Get Data" class="button" id="special">
+     <div id="data"></div>
     <script>
+  let btn=document.getElementById("special");
+  let dataele=document.getElementById("data");
 
+  btn.addEventListener('click',loadData);
+  function loadData(){
+    let xhr=new XMLHttpRequest();
+    xhr.open('GET','test.txt',true);
+    xhr.send();
+    xhr.onprogress=function(){
+       dataele.innerText=  console.log("This si sloading")
+    }
+    xhr.onload=function(){
+        dataele.innerText=xhr.responseText;
+    }
+  }
 
     </script>
 </body>
