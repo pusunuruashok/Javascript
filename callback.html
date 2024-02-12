@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+      
+    //   function one(m){
+    //     console.log("THis is one")
+    //     m();
+    //   }
+    //   function two(){
+    //     console.log("This is two")
+    //   }
+    //   one(two);
+
+    function add(a,b){
+        console.log(a+b);
+    }
+    function product(a,b){
+        console.log(a*b);
+    }
+    function calculator(val,val1,operation){
+        operation(val,val1);
+         
+    }
+    calculator(4,5,product);
+    calculator(5,9,add);
+    </script>
+</body>
+</html>
