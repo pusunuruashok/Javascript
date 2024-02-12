@@ -9,7 +9,37 @@
 
   <script>
    
-   
+   var arr=[10,20,30,40]
+   function square(num){
+    return num*num 
+   }
+   function cube(num){
+    return num*num*num 
+   }
+
+   function operation(a1,operation1){
+    let result=[]
+    for(ele of a1){
+        result.push(operation1(ele));
+    }
+    return result
+   }
+   console.log(arr);
+   let x=operation(arr,square)
+   console.log(x);
+   let y=operation(arr,cube)
+   console.log(y);
+
+
+   function first(){
+     return second 
+   }
+   function second(){
+    console.log("THe name is ashok pusunuru");
+   }
+   first()()
+   let s1= first();
+      s1()
   </script>    
 </body>
 </html>
