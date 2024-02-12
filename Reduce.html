@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+     
+     var x1=[10,21,42,35]
+   var reduce=  x1.reduce(function(acc,ele,index,arr){
+        if(acc >ele){
+            return acc
+        }
+        else{
+            return ele
+        }
+     },x1[0])
+     console.log(reduce) 
+        
+     
+    </script>
+</body>
+</html>
