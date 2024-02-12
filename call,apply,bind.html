@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   myobject={ 
+         salary:20000,
+        getSalary:function(a,b){
+            // console.log(this.salary);
+            // console.log(window.salary);
+            console.log(this.salary);
+            console.log(a,b)
+        }
+        }
+        myobject.getSalary(65,66)
+        employee={
+            salary:40000
+        }
+        employee2={
+            salary:60000
+        }
+       myobject.getSalary.call(employee,89,90);
+       myobject.getSalary.call(employee2,90,76)
+
+    myobject.getSalary.apply(employee2,[43,45]);
+               
+        var f2 =myobject.getSalary.bind(employee2);
+           f2()
+    </script>
+</body>
+</html>
