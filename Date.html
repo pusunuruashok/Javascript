@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        
+        let d1=new Date();
+        console.log(d1);
+        let d2=new Date(1000);
+        console.log(d2);
+        let d3=new Date(24*60*60*1000)
+        console.log(d3);
+        let d4=new Date('2024-02-2')
+        console.log(d4);
+        let d5=new Date('03-12-2024')
+        console.log(d5);
+        let d6=new Date(2024,10,12,5,30,10);
+        console.log(d6);
+        let d7=new Date(); 
+          console.log(d7.getTime()); 
+          console.log(d7.getFullYear());
+          console.log(d7.getMonth());
+    
+          let months=["jan","feb","march","april"] 
+          console.log(months[d1.getMonth()]); 
+          d7.setFullYear(2025);
+          console.log(d7);
+
+    </script>
+</body>
+</html>
