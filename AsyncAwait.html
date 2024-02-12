@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+      
+    async  function test(){
+        // console.log("Ashok1")
+        // var x= await 5+8
+        // console.log("Ashok123")
+        // return x;
+       
+        // let var1= fetch("test.txt")
+        // var1.then(function(data){
+        //     data.text().then(function(console1){
+        //         console.log(console1)
+        //     })
+        // })
+        console.log("inside function")
+        let var1=await fetch("test.txt");
+        console.log("inside function statement 2")
+        let var2=await var1.text()
+        console.log(var2);
+           
+        }
+        test();
+        
+       
+      
+    //   let v=test();
+    //   console.log("sssss")
+    //   v.then(function(data){
+    //     console.log(data);
+    //   })
+    </script>
+</body>
+</html>
