@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+      let arr=[10,22,34,45]
+      let person={
+        "name":"Ashok",
+        "age":34,
+        "gender":"male",
+        "address":{
+            "city":"vijayawada",
+            "state":"ap"
+        }
+      }
+
+        let [a,...c]=arr 
+        console.log(a,c);
+
+        let {name,age,gender,address:{city}}=person
+          console.log(name,age,gender,city)
+          
+
+    </script>
+</body>
+</html>
