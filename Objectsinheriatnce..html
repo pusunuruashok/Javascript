@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        obj1={
+            name:"Ashjok",
+            age:35,
+            gender:"male"
+        }
+        let var1=Object.create(obj1);
+        var1.place="chennai"
+        console.log(var1);
+       
+        let var2=Object.create(var1);
+        var2.gender="female";
+        var2.place="Hyd"
+         console.log(var2);
+       
+       
+    </script>
+</body>
+</html>
