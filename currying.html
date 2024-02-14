@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    //  function sum(a,b,c){
+    //     return a+b+c
+    //  }
+    //  console.log(sum(10,20,30)) 
+
+    //  function sum1(a){
+    //     return  function(b){
+    //         return function(c){
+    //             return a+b+c;
+    //         }
+
+    //     }
+    //  }
+    //   console.log(sum1(10));
+    //   console.log(sum1(10)(20));
+    //   console.log(sum1(10)(20)(30));
+
+    function mulitply(a,b){
+        return a*b
+    }
+
+    function mutilplyfive(a){
+        return function(b) {
+            return a*b;
+        }
+
+    }
+    console.log(mulitply(6,7));
+    let m1=new mutilplyfive(9)
+    console.log(m1(7))
+
+ </script>
+</body>
+</html>
